@@ -6,12 +6,12 @@ import mysql.connector
 config = {
   'user': 'fulgure',
   'password': 'p9Ek6vB7H3i6Gz',
-  'host': 'localhost',
+  'host': '194.147.5.60',
   'database': 'fulgure',
   'raise_on_warnings': True
 }
 conn = mysql.connector.connect(**config)
-cursor = conn.cursor()
+cursor = conn.cursor(buffered=True)
 
 # Fonction pour ajouter une URL à la base de données si elle n'y est pas déjà
 def add_url(url):
@@ -70,7 +70,6 @@ while True:
     next_url = get_next_unexplored_url()
     if not next_url:
         break
-    print(next_url)
     try:
         crawler(next_url)
     except Exception as e:
