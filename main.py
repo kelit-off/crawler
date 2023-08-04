@@ -5,10 +5,10 @@ import mysql.connector
 # Connexion à MySQL
 config = {
 <<<<<<< HEAD
-  'user': 'fulgure',
-  'password': 'p9Ek6vB7H3i6Gz',
-  'host': '194.147.5.60',
-  'database': 'fulgure',
+  'user': 'username',
+  'password': 'password',
+  'host': 'host',
+  'database': 'database name',
 =======
   'user': 'username',
   'password': 'password',
