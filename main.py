@@ -1,13 +1,13 @@
-eimport requests
+import requests
 from bs4 import BeautifulSoup
 import mysql.connector
 
 # Connexion à MySQL
 config = {
-  'user': 'fulgure',
-  'password': 'p9Ek6vB7H3i6Gz',
-  'host': '194.147.5.60',
-  'database': 'fulgure',
+  'user': 'username',
+  'password': 'password',
+  'host': 'host',
+  'database': 'database name',
 }
 conn = mysql.connector.connect(**config)
 cursor = conn.cursor(buffered=True)
