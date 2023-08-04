@@ -4,18 +4,10 @@ import mysql.connector
 
 # Connexion à MySQL
 config = {
-<<<<<<< HEAD
   'user': 'fulgure',
   'password': 'p9Ek6vB7H3i6Gz',
   'host': '194.147.5.60',
   'database': 'fulgure',
-=======
-  'user': 'username',
-  'password': 'password',
-  'host': 'ip or localhost',
-  'database': 'database name',
->>>>>>> 5ec5d6ae2b7eda19614764600206ed471ae93d11
-  'raise_on_warnings': True
 }
 conn = mysql.connector.connect(**config)
 cursor = conn.cursor(buffered=True)
